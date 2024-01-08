@@ -7,7 +7,7 @@ import Header from "@/components/Header.astro";
 <Layout title="Frontend Mentor | Bookmark landing page" />
 <Header />
 <main>
-  <section class="mt-24">
+  <section class="mt-24 flex items-center">
     <div class="ml-40">
       <h1
         class="text-5xl leading-[3.25rem] tracking-[-0.00938rem] font-medium text-[#242A45] w-[33.75rem]"
@@ -33,6 +33,14 @@ import Header from "@/components/Header.astro";
           class="w-40 h-12 bg-[#F7F7F7] text-[#242A45] opacity-75 hero__btn"
           >Get it on Firefox</button
         >
+      </div>
+    </div>
+    <div class="hero__img relative">
+      <div class="z-10">
+        <img src="/images/illustration-hero.svg" alt="" />
+      </div>
+      <div class="absolute right-[-100px] top-[150px] z-[-100]">
+        <img src="/images/new.svg" alt="" />
       </div>
     </div>
   </section>
