@@ -44,6 +44,7 @@ import Header from "@/components/Header.astro";
       </div>
     </div>
   </section>
+
   <section class="mt-44">
     <div class="flex flex-col items-center text-center gap-4">
       <h2
@@ -57,21 +58,58 @@ import Header from "@/components/Header.astro";
         them on the go.
       </p>
     </div>
-    <div class="mt-20">
+
+    <div class="big--div mt-20">
       <div class="flex items-center justify-center gap-24">
         <button
-          class="text-base leading-[1.0625rem] tracking-[0.03331rem] font-normal text-[#242A45] opacity-75 hover:opacity-none"
+          class="text-base leading-[1.0625rem] tracking-[0.03331rem] font-normal text-[#242A45] opacity-75 hover:opacity-100"
           onclick="openTap(this,'simple__bookmarking')"
           >Simple Bookmarking</button
         >
         <button
-          class="text-base leading-[1.0625rem] tracking-[0.03331rem] font-normal text-[#242A45] opacity-75 hover:opacity-0"
+          class="text-base leading-[1.0625rem] tracking-[0.03331rem] font-normal text-[#242A45] opacity-75 hover:opacity-100"
           onclick="openTap(this,'speedy__Searching')">Speedy Searching</button
         >
         <button
-          class="text-base leading-[1.0625rem] tracking-[0.03331rem] font-normal text-[#242A45] opacity-75 hover:opacity-0"
+          class="text-base leading-[1.0625rem] tracking-[0.03331rem] font-normal text-[#242A45] opacity-75 hover:opacity-100"
           onclick="openTap(this,'easy__sharing')">Easy Sharing</button
         >
+      </div>
+
+      <div class="flex items-center mt-16">
+        <div>
+          <div class="hero__img relative">
+            <div class="z-10">
+              <img src="/images/illustration-hero.svg" alt="" />
+            </div>
+            <div class="absolute left-[-100px] top-[150px] z-[-100]">
+              <img src="/images/Rectangle-Copy-14.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="ml-40">
+          <h2
+            class="text-[2rem] leading-[3.25rem] tracking-[-0.00625rem] font-medium text-[#242A45] w-[21.75rem]"
+          >
+            Bookmark in one click
+          </h2>
+          <p
+            class="my-8 text-lg font-normal text-[#242A45] opacity-50 w-[27.8125rem]"
+          >
+            Organize your bookmarks however you like. Our simple drag-and-drop
+            interface gives you complete control over how you manage your
+            favourite sites.
+          </p>
+          <div
+            class="flex items-center gap-8 text-sm leading-7 tracking-[0.01563rem] font-medium"
+          >
+            <button
+              type="button"
+              class="w-[7.125rem] h-12 bg-[#5267DF] text-white hero__btn"
+              >More Info</button
+            >
+          </div>
+        </div>
       </div>
     </div>
   </section>
