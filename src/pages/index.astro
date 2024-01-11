@@ -36,7 +36,7 @@ import Header from "@/components/Header.astro";
       </div>
     </div>
     <div class="hero__img relative">
-      <div class="z-10">
+      <div class="z-10 ml-10">
         <img src="/images/illustration-hero.svg" alt="" />
       </div>
       <div class="absolute right-[-100px] top-[150px] z-[-100]">
@@ -60,7 +60,7 @@ import Header from "@/components/Header.astro";
     </div>
 
     <div class="big--div mt-20">
-      <div class="flex items-center justify-center gap-24">
+      <div class="btn--div flex items-center justify-center gap-24">
         <button
           class="text-base leading-[1.0625rem] tracking-[0.03331rem] font-normal text-[#242A45] opacity-75 hover:opacity-100"
           onclick="openTap(this,'simple__bookmarking')"
@@ -76,18 +76,21 @@ import Header from "@/components/Header.astro";
         >
       </div>
 
-      <div class="flex items-center mt-16">
-        <div>
+      <div
+        id="simple__bookmarking"
+        class="tap first--btn--div flex items-center mt-16"
+      >
+        <div class="imgs--div first-col">
           <div class="hero__img relative">
-            <div class="z-10">
-              <img src="/images/illustration-hero.svg" alt="" />
+            <div class="z-10 ml-40">
+              <img src="/images/illustration-features-tab-1.svg" alt="" />
             </div>
-            <div class="absolute left-[-100px] top-[150px] z-[-100]">
+            <div class="absolute left-[-100px] top-[80px] z-[-100]">
               <img src="/images/Rectangle-Copy-14.png" alt="" />
             </div>
           </div>
         </div>
-        <div class="ml-40">
+        <div class="text--div seconde--col ml-28">
           <h2
             class="text-[2rem] leading-[3.25rem] tracking-[-0.00625rem] font-medium text-[#242A45] w-[21.75rem]"
           >
@@ -110,6 +113,170 @@ import Header from "@/components/Header.astro";
             >
           </div>
         </div>
+      </div>
+
+      <div
+        id="speedy__Searching"
+        class="tap first--btn--div flex items-center mt-16"
+        style="display: none"
+      >
+        <div class="imgs--div first-col self-center">
+          <div class="hero__img relative">
+            <div class="z-10 ml-48">
+              <img src="/images/illustration-features-tab-2.svg" alt="" />
+            </div>
+            <div class="absolute left-[-100px] top-[80px] z-[-100]">
+              <img src="/images/Rectangle-Copy-14.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="text--div seconde--col ml-28">
+          <h2
+            class="text-[2rem] leading-[3.25rem] tracking-[-0.00625rem] font-medium text-[#242A45] w-[21.75rem]"
+          >
+            Intelligent search
+          </h2>
+          <p
+            class="my-8 text-lg font-normal text-[#242A45] opacity-50 w-[27.8125rem]"
+          >
+            Our powerful search feature will help you find saved sites in no
+            time at all. No need to trawl through all of your bookmarks.
+          </p>
+          <div
+            class="flex items-center gap-8 text-sm leading-7 tracking-[0.01563rem] font-medium"
+          >
+            <button
+              type="button"
+              class="w-[7.125rem] h-12 bg-[#5267DF] text-white hero__btn"
+              >More Info</button
+            >
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="easy__sharing"
+        class="tap first--btn--div flex items-center mt-16"
+        style="display:none "
+      >
+        <div class="imgs--div first-col self-center">
+          <div class="hero__img relative">
+            <div class="z-10 ml-48">
+              <img src="/images/illustration-features-tab-3.svg" alt="" />
+            </div>
+            <div class="absolute left-[-100px] top-[80px] z-[-100]">
+              <img src="/images/Rectangle-Copy-14.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="text--div seconde--col ml-28">
+          <h2
+            class="text-[2rem] leading-[3.25rem] tracking-[-0.00625rem] font-medium text-[#242A45] w-[21.75rem]"
+          >
+            Share your bookmarks
+          </h2>
+          <p
+            class="my-8 text-lg font-normal text-[#242A45] opacity-50 w-[27.8125rem]"
+          >
+            Easily share your bookmarks and collections with others. Create a
+            shareable link that you can send at the click of a button.
+          </p>
+          <div
+            class="flex items-center gap-8 text-sm leading-7 tracking-[0.01563rem] font-medium"
+          >
+            <button
+              type="button"
+              class="w-[7.125rem] h-12 bg-[#5267DF] text-white hero__btn"
+              >More Info</button
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mt-48">
+    <div class="flex flex-col items-center gap-2 text-center">
+      <h2
+        class="text-[2rem] leading-[3.25rem] font-medium text-[#242A45] tracking-[-0.00625rem]"
+      >
+        Download the extension
+      </h2>
+      <p class="w-[33.75rem] text-lg font-normal text-[#242A45] opacity-50">
+        We’ve got more browsers in the pipeline. Please do let us know if you’ve
+        got a favourite you’d like us to prioritize.
+      </p>
+    </div>
+    <div class="flex items-center justify-center gap-10 mt-24">
+      <div
+        class="box1 box flex flex-col items-center justify-evenly gap-2 text-center w-[17.5rem] h-[23.1875rem] bg-white"
+      >
+        <div>
+          <img src="/images/logo-chrome.svg" alt="logo-chrome.svg" />
+        </div>
+        <div>
+          <h2
+            class="text-xl leading-normal font-medium tracking-[0.01563rem] text-[#242A45]"
+          >
+            Add to Chrome
+          </h2>
+          <h3 class="text-[0.9375rem] font-normal leading-7 text-[#242A45]">
+            Minimum version 62
+          </h3>
+        </div>
+        <button
+          type="button"
+          class="box__btn block text-sm font-medium leading-7 text-white tracking-[0.01563rem] bg-[#5267DF] w-[14.5rem] h-12"
+          >Add & Install Extension</button
+        >
+      </div>
+      <div
+        class="box2 box flex flex-col items-center justify-evenly gap-2 text-center w-[17.5rem] h-[23.1875rem] bg-white"
+      >
+        <div>
+          <img src="/images/logo-firefox.svg" alt="firefox-chrome.svg" />
+        </div>
+        <div>
+          <h2
+            class="text-xl leading-normal font-medium tracking-[0.01563rem] text-[#242A45]"
+          >
+            Add to Firefox
+          </h2>
+          <h3
+            class="text-[0.9375rem] font-normal leading-7 text-[#242A45] opacity-5"
+          >
+            Minimum version 55
+          </h3>
+        </div>
+        <button
+          type="button"
+          class="box__btn block text-sm font-medium leading-7 text-white tracking-[0.01563rem] bg-[#5267DF] w-[14.5rem] h-12"
+          >Add & Install Extension</button
+        >
+      </div>
+      <div
+        class="box3 box flex flex-col items-center justify-evenly gap-2 text-center w-[17.5rem] h-[23.1875rem] bg-white"
+      >
+        <div>
+          <img src="/images/logo-opera.svg" alt="oper-chrome.svg" />
+        </div>
+        <div>
+          <h2
+            class="text-xl leading-normal font-medium tracking-[0.01563rem] text-[#242A45]"
+          >
+            Add to Opera
+          </h2>
+          <h3
+            class="text-[0.9375rem] font-normal leading-7 text-[#242A45] opacity-5"
+          >
+            Minimum version 46
+          </h3>
+        </div>
+        <button
+          type="button"
+          class="box__btn block text-sm font-medium leading-7 text-white tracking-[0.01563rem] bg-[#5267DF] w-[14.5rem] h-12"
+          >Add & Install Extension</button
+        >
       </div>
     </div>
   </section>

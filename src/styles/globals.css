@@ -60,8 +60,15 @@ select {
 
 
 
-/* Hero Section */
+.box {
+  border-radius: 0.9375rem;
+  box-shadow: 0px 10px 20px -5px rgba(73, 93, 207, 0.20);
+}
 
+.box__btn {
+  border-radius: 0.3125rem;
+  box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20);
+}
 
 
 
